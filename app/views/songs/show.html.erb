@@ -1,3 +1,2 @@
 <h1><%= @song.name %></h1>
-
-<!-- <h1><%= @song.genre.name %></h1> -->
+<%= link_to @song.genre.name, genre_path(@genre.name) %>
