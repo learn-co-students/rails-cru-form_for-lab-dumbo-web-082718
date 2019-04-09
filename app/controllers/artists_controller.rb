@@ -16,15 +16,18 @@ class ArtistsController < ApplicationController
 
   def edit
     @artist = Artist.find(params[:id])
-    raise params.inspect
+
+    #raise params.inspect
   end
 
   def update
     @artist = Artist.find(params[:id])
+    @artist.update(name: params[:artist][:name],bio: params[:artist][:bio])
+    redirect_to artist_path(@artist)
   end
 
   def show
-  @artist = Artist.find(params[:id])
+    @artist = Artist.find(params[:id])
   end
 
 end
