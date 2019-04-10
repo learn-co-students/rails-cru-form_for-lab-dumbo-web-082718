@@ -29,7 +29,7 @@ gem 'rb-readline'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'pry', '~> 0.12.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
